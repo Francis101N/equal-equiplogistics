@@ -37,6 +37,27 @@
     include('inc/nav.php');
     ?>
 
+    <!-- Floating Info Box (Hidden Initially) -->
+    <div id="floatingBox"
+        class="fixed bottom-6 right-6 z-50 bg-white/70 backdrop-blur-md shadow-lg rounded-xl p-4 w-64 opacity-0 transition-opacity duration-500">
+        <h4 class="text-gray-900 font-bold text-lg mb-2">Contact & Working Hours</h4>
+        <p class="text-gray-700 flex items-center mb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-red-600" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0l4 4m-4-4l4-4" />
+            </svg>
+            info@equipandlogistics.com
+        </p>
+        <p class="text-gray-700 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-red-600" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Mon - Fri: 8:00 AM - 6:00 PM
+        </p>
+    </div>
+
     <!-- Banner Section -->
     <section class="bg-black relative w-full h-[60vh] md:h-[70vh] overflow-hidden flex items-center justify-center">
 
@@ -153,7 +174,7 @@
         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-     <br>
+    <br>
     <div class="flex justify-center items-center gap-6 py-6">
 
         <!-- Email -->
@@ -191,5 +212,38 @@
     ?>
 
 </body>
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const overlay = document.getElementById('overlay');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('-translate-x-full');
+        overlay.classList.remove('hidden');
+    });
+
+    function closeMenu() {
+        mobileMenu.classList.add('-translate-x-full');
+        overlay.classList.add('hidden');
+    }
+
+    closeBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu);
+
+
+    // Show the floating box after scrolling down 100px
+    const floatingBox = document.getElementById("floatingBox");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {  // scroll threshold
+            floatingBox.classList.remove("opacity-0");
+            floatingBox.classList.add("opacity-100");
+        } else {
+            floatingBox.classList.remove("opacity-100");
+            floatingBox.classList.add("opacity-0");
+        }
+    });
+</script>
 
 </html>

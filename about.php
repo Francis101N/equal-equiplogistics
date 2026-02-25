@@ -37,6 +37,27 @@
     include('inc/nav.php');
     ?>
 
+    <!-- Floating Info Box (Hidden Initially) -->
+    <div id="floatingBox"
+        class="fixed bottom-6 right-6 z-50 bg-white/70 backdrop-blur-md shadow-lg rounded-xl p-4 w-64 opacity-0 transition-opacity duration-500">
+        <h4 class="text-gray-900 font-bold text-lg mb-2">Contact & Working Hours</h4>
+        <p class="text-gray-700 flex items-center mb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-red-600" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0l4 4m-4-4l4-4" />
+            </svg>
+            info@equipandlogistics.com
+        </p>
+        <p class="text-gray-700 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-red-600" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Mon - Fri: 8:00 AM - 6:00 PM
+        </p>
+    </div>
+
     <!-- Banner Section -->
     <section class="bg-black relative w-full h-[60vh] md:h-[70vh] overflow-hidden flex items-center justify-center">
 
@@ -59,8 +80,25 @@
 
     </section>
 
-    <main class="bg-white py-12 md:py-24">
+    <main class="bg-white ">
         <div class="max-w-6xl mx-auto px-6 md:px-12">
+            <div
+                class="max-w-xl mx-auto my-12 p-8 bg-white/70 backdrop-blur-md rounded-2xl shadow-xl flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+
+                <div class="flex-shrink-0">
+                    <img src="IMAGES/WhatsApp Image 2026-02-24 at 10.03.21 PM.jpeg" alt="Quote Icon"
+                        class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-lg">
+                </div>
+
+                <div class="text-center md:text-left">
+                    <p class="text-gray-900 font-extrabold text-2xl md:text-2xl leading-snug">
+                        "FEAR IS PERCEPTION..<br>
+                        DON'T ENTERTAIN IT"
+                    </p>
+                    <span class="mt-2 block text-red-600 text-sm md:text-base"> Chairman</span>
+                    <span class="block text-gray-600 text-sm md:text-base"> ~ Equip&Equal Logistics ~</span>
+                </div>
+            </div><br>
 
             <!-- Section Header -->
             <div class="mb-10 md:mb-14 text-center">
@@ -233,17 +271,38 @@
 </body>
 
 <script>
-    // Mobile Menu Toggle
     const menuBtn = document.getElementById('menuBtn');
+    const closeBtn = document.getElementById('closeBtn');
     const mobileMenu = document.getElementById('mobileMenu');
+    const overlay = document.getElementById('overlay');
 
     menuBtn.addEventListener('click', () => {
-        if (mobileMenu.style.maxHeight && mobileMenu.style.maxHeight !== "0px") {
-            mobileMenu.style.maxHeight = "0px";
+        mobileMenu.classList.remove('-translate-x-full');
+        overlay.classList.remove('hidden');
+    });
+
+    function closeMenu() {
+        mobileMenu.classList.add('-translate-x-full');
+        overlay.classList.add('hidden');
+    }
+
+    closeBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu);
+
+    // Show the floating box after scrolling down 100px
+    const floatingBox = document.getElementById("floatingBox");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {  // scroll threshold
+            floatingBox.classList.remove("opacity-0");
+            floatingBox.classList.add("opacity-100");
         } else {
-            mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px";
+            floatingBox.classList.remove("opacity-100");
+            floatingBox.classList.add("opacity-0");
         }
     });
+
+
 </script>
 
 </html>

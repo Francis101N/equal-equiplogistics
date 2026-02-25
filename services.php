@@ -37,6 +37,27 @@
     include('inc/nav.php');
     ?>
 
+    <!-- Floating Info Box (Hidden Initially) -->
+    <div id="floatingBox"
+        class="fixed bottom-6 right-6 z-50 bg-white/70 backdrop-blur-md shadow-lg rounded-xl p-4 w-64 opacity-0 transition-opacity duration-500">
+        <h4 class="text-gray-900 font-bold text-lg mb-2">Contact & Working Hours</h4>
+        <p class="text-gray-700 flex items-center mb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-red-600" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0l4 4m-4-4l4-4" />
+            </svg>
+            info@equipandlogistics.com
+        </p>
+        <p class="text-gray-700 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-red-600" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Mon - Fri: 8:00 AM - 6:00 PM
+        </p>
+    </div>
+
     <!-- Banner Section -->
     <section class="bg-black relative w-full h-[60vh] md:h-[70vh] overflow-hidden flex items-center justify-center">
 
@@ -115,16 +136,16 @@
                         <h5 class="text-red-600 font-semibold uppercase tracking-widest mb-2">Why customers love us</h5>
                         <h2
                             class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 border-b-2 border-red-600 inline-block pb-2">
-                            OPERATIONS DYNAMICS AND DIVERSIFICATION
+                            HAULAGE SERVICES
                         </h2>
                         <p class="text-gray-700 leading-relaxed text-lg">
-                            Logistics planning and scheduling for client’s transportation of liquid bulk within
-                            principles.
-                            Warehousing arrangements and management nationwide. Prompt online responses to client
-                            queries and
-                            intermodal transportation planning and execution. Dry bulk movement and handling. Gift
-                            coverage
-                            for all movements.
+                            Within Nigeria and sub region, we offer road haulage in conjunction with approved suppliers
+                            and our trusted and reputable overseas network. EQUAL LOGISTICS offers high-quality road
+                            freight forwarding on all haulage services with GIT (Goods In Transit) Insurance cover. We
+                            operate a highly effcient maintenance schedule for our trucks with a standby recovery truck
+                            to aid/facilitate service delivery. This also includes an ultra-modern truck/vehicle
+                            workshop staffed with dedicated and well-trained technical staff designed to cater for the
+                            various needs of the present fleet.
                         </p>
                     </div>
 
@@ -133,15 +154,13 @@
                         <h5 class="text-red-600 font-semibold uppercase tracking-widest mb-2">Why customers love us</h5>
                         <h2
                             class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 border-b-2 border-red-600 inline-block pb-2">
-                            HEALTH AND SAFETY (HSE)
+                            FERRY SERVICES
                         </h2>
                         <p class="text-gray-700 leading-relaxed text-lg">
-                            The greatest concern in the workplace is the health and safety of its workforce, our
-                            clients,
-                            and the environment. We have made safety our number one concern, with strict compliance on
-                            the safe and environmentally responsible operation of oil tankers and terminals, whilst
-                            promoting
-                            continuous improvement in our standards of operation.
+                            Our ferry services provide seamless water transportation for goods and passengers.
+                            Safety, punctuality, and efficiency are our top priorities.
+                            With experienced crews and modern vessels, Aqua Logistics ensures every journey is reliable
+                            and stress-free.
                         </p>
                         <p class="text-gray-700 leading-relaxed text-lg">
                             We recognize the need for continuous steps towards the development of a comprehensive
@@ -157,71 +176,47 @@
                         <h5 class="text-red-600 font-semibold uppercase tracking-widest mb-2">Why customers love us</h5>
                         <h2
                             class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 border-b-2 border-red-600 inline-block pb-2">
-                            WE TAKE FULL ADVANTAGE
+                            LOCAL INLAND MARINE SERVICES
                         </h2>
                         <p class="text-gray-700 leading-relaxed text-lg">
-                            EQUAL takes full advantage of the diversity of our portfolio of services, worldwide
-                            partnerships,
-                            resources, and expertise to deliver integrated solutions that result in time and cost
-                            efficiency.
-                            Sectors such as multinational and blue-chip companies benefit from our tailor-made service
-                            packages
-                            covering global cargo consolidation, bulk and ODC (over-dimensional cargo), end-to-end
-                            supply,
-                            marine logistics, and advisory services.
+                            Our inland marine solutions connect rivers, ports, and local waterways for efficient cargo
+                            movement.
+                            We combine expertise, local knowledge, and modern vessels to deliver a seamless supply chain
+                            experience.
+                            Aqua Logistics ensures your goods reach inland destinations safely and on schedule.
                         </p>
-                        <p class="text-gray-700 leading-relaxed text-lg">
-                            Other sectors that can benefit from our wide range of services include technology,
-                            healthcare,
-                            sports, entertainment/events, projects, offshore, manufacturing, etc.
-                        </p>
+
                     </div>
                     <div id="terminal"
                         class="hidden p-8 bg-white rounded-xl shadow-lg animate-fadeIn transition-all duration-500">
                         <h5 class="text-red-600 font-semibold uppercase tracking-widest mb-2">Why customers love us</h5>
                         <h2
                             class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 border-b-2 border-red-600 inline-block pb-2">
-                            WE TAKE FULL ADVANTAGE
+                            PORT TERMINAL SERVICES
                         </h2>
                         <p class="text-gray-700 leading-relaxed text-lg">
-                            EQUAL takes full advantage of the diversity of our portfolio of services, worldwide
-                            partnerships,
-                            resources, and expertise to deliver integrated solutions that result in time and cost
-                            efficiency.
-                            Sectors such as multinational and blue-chip companies benefit from our tailor-made service
-                            packages
-                            covering global cargo consolidation, bulk and ODC (over-dimensional cargo), end-to-end
-                            supply,
-                            marine logistics, and advisory services.
+                            Our port terminal operations offer fast, secure, and professional handling of all cargo
+                            types.
+                            From loading and unloading to storage and documentation, every process is managed with
+                            precision.
+                            Aqua Logistics helps you minimize turnaround times while maximizing efficiency at the
+                            terminal.
                         </p>
-                        <p class="text-gray-700 leading-relaxed text-lg">
-                            Other sectors that can benefit from our wide range of services include technology,
-                            healthcare,
-                            sports, entertainment/events, projects, offshore, manufacturing, etc.
-                        </p>
+
                     </div>
                     <div id="shipping"
                         class="hidden p-8 bg-white rounded-xl shadow-lg animate-fadeIn transition-all duration-500">
                         <h5 class="text-red-600 font-semibold uppercase tracking-widest mb-2">Why customers love us</h5>
                         <h2
                             class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 border-b-2 border-red-600 inline-block pb-2">
-                            WE TAKE FULL ADVANTAGE
+                            LOCAL & INTERNATIONAL SHIPPING
                         </h2>
                         <p class="text-gray-700 leading-relaxed text-lg">
-                            EQUAL takes full advantage of the diversity of our portfolio of services, worldwide
-                            partnerships,
-                            resources, and expertise to deliver integrated solutions that result in time and cost
-                            efficiency.
-                            Sectors such as multinational and blue-chip companies benefit from our tailor-made service
-                            packages
-                            covering global cargo consolidation, bulk and ODC (over-dimensional cargo), end-to-end
-                            supply,
-                            marine logistics, and advisory services.
-                        </p>
-                        <p class="text-gray-700 leading-relaxed text-lg">
-                            Other sectors that can benefit from our wide range of services include technology,
-                            healthcare,
-                            sports, entertainment/events, projects, offshore, manufacturing, etc.
+                            We provide end-to-end shipping solutions for domestic and international clients.
+                            With expertise in customs, documentation, and freight management, your cargo moves
+                            efficiently across borders.
+                            Aqua Logistics ensures your shipments arrive safely, on time, and in compliance with global
+                            standards.
                         </p>
                     </div>
 
@@ -242,6 +237,25 @@
 
 </body>
 <script>
+
+    const menuBtn = document.getElementById('menuBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const overlay = document.getElementById('overlay');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('-translate-x-full');
+        overlay.classList.remove('hidden');
+    });
+
+    function closeMenu() {
+        mobileMenu.classList.add('-translate-x-full');
+        overlay.classList.add('hidden');
+    }
+
+    closeBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu);
+
     const tabs = document.querySelectorAll(".tab-btn");
     const contents = document.querySelectorAll(".tab-content > div");
 
@@ -265,6 +279,19 @@
 
     // Optional: Activate first tab by default
     tabs[0].click();
+
+    // Show the floating box after scrolling down 100px
+    const floatingBox = document.getElementById("floatingBox");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {  // scroll threshold
+            floatingBox.classList.remove("opacity-0");
+            floatingBox.classList.add("opacity-100");
+        } else {
+            floatingBox.classList.remove("opacity-100");
+            floatingBox.classList.add("opacity-0");
+        }
+    });
 </script>
 
 </html>

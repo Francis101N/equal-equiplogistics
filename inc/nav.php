@@ -4,33 +4,50 @@
 
         <!-- Logo -->
         <div class="flex items-center">
-            <img src="IMAGES/animation-logo-Trim-ezgif.com-video-to-gif-converter.gif" alt="Logo" class="object-contain"
-                style="width:100px;">
+            <img src="IMAGES/animation-logo-Trim-ezgif.com-video-to-gif-converter.gif"
+                 alt="Logo"
+                 class="object-contain"
+                 style="width:100px;">
         </div>
 
         <!-- Desktop Menu -->
         <ul class="hidden md:flex space-x-10 font-medium">
-            <li><a href="home" class="hover:text-gray-200 transition-colors duration-300">HOME</a></li>
-            <li><a href="about" class="hover:text-gray-200 transition-colors duration-300">ABOUT US</a></li>
-            <li><a href="services" class="hover:text-gray-200 transition-colors duration-300">OUR SERVICES</a></li>
-            <li><a href="contact" class="hover:text-gray-200 transition-colors duration-300">CONTACT</a></li>
+            <li><a href="home" class="hover:text-gray-200 transition">HOME</a></li>
+            <li><a href="about" class="hover:text-gray-200 transition">ABOUT US</a></li>
+            <li><a href="services" class="hover:text-gray-200 transition">OUR SERVICES</a></li>
+            <li><a href="contact" class="hover:text-gray-200 transition">CONTACT</a></li>
         </ul>
 
-        <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center space-y-1.5 focus:outline-none">
-            <span class="block w-8 h-0.5 bg-white transition-all duration-300"></span>
-            <span class="block w-8 h-0.5 bg-white transition-all duration-300"></span>
-            <span class="block w-8 h-0.5 bg-white transition-all duration-300"></span>
+        <!-- Hamburger -->
+        <button id="menuBtn" class="md:hidden focus:outline-none">
+            <div class="space-y-2">
+                <span class="block w-8 h-0.5 bg-white"></span>
+                <span class="block w-8 h-0.5 bg-white"></span>
+                <span class="block w-8 h-0.5 bg-white"></span>
+            </div>
         </button>
 
     </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="md:hidden bg-red-700 overflow-hidden max-h-0 transition-all duration-500">
-        <ul class="flex flex-col text-center space-y-4 py-6 font-medium text-lg">
-            <li><a href="home" class="hover:text-gray-200 transition-colors duration-300">HOME</a></li>
-            <li><a href="about" class="hover:text-gray-200 transition-colors duration-300">ABOUT US</a></li>
-            <li><a href="#" class="hover:text-gray-200 transition-colors duration-300">OUR SERVICES</a></li>
-            <li><a href="#" class="hover:text-gray-200 transition-colors duration-300">CONTACT</a></li>
-        </ul>
-    </div>
 </nav>
+
+<!-- Overlay -->
+<div id="overlay"
+     class="fixed inset-0 bg-black bg-opacity-60 hidden transition-opacity duration-300 z-40">
+</div>
+
+<!-- Mobile Sidebar -->
+<div id="mobileMenu"
+     class="fixed top-0 left-0 h-full w-72 bg-[#953834] text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50 shadow-2xl">
+
+    <div class="p-6 flex justify-between items-center border-b border-white/20">
+        <h2 class="text-xl font-bold">Menu</h2>
+        <button id="closeBtn" class="text-2xl">&times;</button>
+    </div>
+
+    <ul class="flex flex-col space-y-6 p-6 text-lg font-medium">
+        <li><a href="home" class="hover:text-gray-300 transition">HOME</a></li>
+        <li><a href="about" class="hover:text-gray-300 transition">ABOUT US</a></li>
+        <li><a href="services" class="hover:text-gray-300 transition">OUR SERVICES</a></li>
+        <li><a href="contact" class="hover:text-gray-300 transition">CONTACT</a></li>
+    </ul>
+</div>

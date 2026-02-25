@@ -36,6 +36,27 @@
     include('inc/header.php');
     ?>
 
+    <!-- Floating Info Box (Hidden Initially) -->
+    <div id="floatingBox"
+        class="fixed bottom-6 right-6 z-50 bg-white/70 backdrop-blur-md shadow-lg rounded-xl p-4 w-64 opacity-0 transition-opacity duration-500">
+        <h4 class="text-gray-900 font-bold text-lg mb-2">Contact & Working Hours</h4>
+        <p class="text-gray-700 flex items-center mb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-red-600" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0l4 4m-4-4l4-4" />
+            </svg>
+            info@equipandlogistics.com
+        </p>
+        <p class="text-gray-700 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-red-600" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Mon - Fri: 8:00 AM - 6:00 PM
+        </p>
+    </div>
+
     <section class="bg-white py-20">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -161,31 +182,53 @@
         </div>
     </section>
 
-    <section class="bg-red-600 py-20">
+    <section class="bg-red-600 py-20 section-one">
         <div class="max-w-6xl mx-auto px-6 lg:px-12">
 
             <!-- Tab Buttons -->
             <div class="flex flex-col md:flex-row justify-center md:space-x-6 space-y-4 md:space-y-0 mb-12">
-                <button class="tab-btn px-6 py-3 font-semibold rounded-lg transition-colors duration-300"
+                <button
+                    class="tab-btn px-6 py-3 font-semibold rounded-lg transition-colors duration-300 bg-white text-black"
                     data-tab="csr">OUR CORPORATE SOCIAL RESPONSIBILITY</button>
-                <button class="tab-btn px-6 py-3 font-semibold rounded-lg transition-colors duration-300"
+                <button
+                    class="tab-btn px-6 py-3 font-semibold rounded-lg transition-colors duration-300 bg-white text-black"
                     data-tab="strategy">OUR STRATEGIC APPROACH</button>
-                <button class="tab-btn px-6 py-3 font-semibold rounded-lg transition-colors duration-300"
+                <button
+                    class="tab-btn px-6 py-3 font-semibold rounded-lg transition-colors duration-300 bg-white text-black"
                     data-tab="warehousing">WAREHOUSING</button>
             </div>
 
             <!-- Tab Content -->
             <div class="tab-content space-y-6 text-gray-700 text-center">
                 <div id="csr" class="hidden p-20 bg-black text-white rounded-lg">
-                    <p>
+                    <h3 class="text-2xl md:text-2xl lg:text-3xl font-extrabold text-white text-center leading-snug">
                         As an industry pacesetter, we are committed to our community, services, employees and business
                         principles consistently.
+                    </h3>
 
-                        Community:
+                    <div
+                        class="images grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8 opacity-0 transform translate-y-10 transition-all duration-700">
 
-                        We are committed to sustaining best business practices and leadership examples that continually
-                        work towards improving the quality of lives of our people and impact positively on our society
-                        and nation.
+                        <img src="IMAGES/medical-outreach/IMG_20251113_091808_438.jpg" alt="Medical Outreach"
+                            class="w-full h-64 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-500 cursor-pointer">
+
+                        <img src="IMAGES/medical-outreach/IMG_20251114_122444_817.jpg" alt="Medical Outreach"
+                            class="w-full h-64 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-500 cursor-pointer">
+
+                        <img src="IMAGES/community-outreach/WhatsApp Image 2026-01-28 at 2.56.43 PM.jpeg"
+                            alt="Community Outreach"
+                            class="w-full h-64 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-500 cursor-pointer">
+
+                        <img src="IMAGES/community-outreach/WhatsApp Image 2026-01-28 at 2.56.50 PM.jpeg"
+                            alt="Community Outreach"
+                            class="w-full h-64 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-500 cursor-pointer">
+
+                        <img src="IMAGES/childrenday-outreach/DSC_2490.JPG" alt="Children's Day Outreach"
+                            class="w-full h-64 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-500 cursor-pointer">
+
+                        <img src="IMAGES/childrenday-outreach/DSC_2439.JPG" alt="Children's Day Outreach"
+                            class="w-full h-64 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-500 cursor-pointer">
+                    </div>
                     </p>
                 </div>
                 <div id="strategy" class="hidden p-20 bg-black text-white rounded-lg">
@@ -219,7 +262,7 @@
         </div>
     </section>
 
-    <section class="bg-gray-50 py-20">
+    <section class="bg-gray-50 py-20 section-two">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="grid md:grid-cols-2 gap-12 items-start">
 
@@ -228,14 +271,14 @@
                     <h4 class="text-red-600 font-semibold uppercase tracking-wide">Why Choose Us</h4>
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900">What Makes Us Different</h2>
 
-                    <ul class="space-y-4 mt-6">
-                        <li class="cursor-pointer p-3 rounded-lg bg-gray-200 hover:bg-gray-300 transition-colors duration-300 tab-item"
+                    <ul class="space-y-4 mt-6 section-two">
+                        <li class="cursor-pointer p-3 rounded-lg bg-gray-300 text-white hover:bg-gray-500 transition-colors duration-300 tab-item"
                             data-tab="operational">OPERATIONAL FOCUS</li>
-                        <li class="cursor-pointer p-3 rounded-lg bg-gray-200 hover:bg-gray-300 transition-colors duration-300 tab-item"
+                        <li class="cursor-pointer p-3 rounded-lg bg-gray-300 text-white hover:bg-gray-500 transition-colors duration-300 tab-item"
                             data-tab="dynamics">OPERATIONS DYNAMICS AND DIVERSIFICATION</li>
-                        <li class="cursor-pointer p-3 rounded-lg bg-gray-200 hover:bg-gray-300 transition-colors duration-300 tab-item"
+                        <li class="cursor-pointer p-3 rounded-lg bg-gray-300 text-white hover:bg-gray-500 transition-colors duration-300 tab-item"
                             data-tab="safety">HEALTH AND SAFETY (HSE)</li>
-                        <li class="cursor-pointer p-3 rounded-lg bg-gray-200 hover:bg-gray-300 transition-colors duration-300 tab-item"
+                        <li class="cursor-pointer p-3 rounded-lg bg-gray-300 text-white hover:bg-gray-500 transition-colors duration-300 tab-item"
                             data-tab="advantage">WE TAKE FULL ADVANTAGE</li>
                     </ul>
                 </div>
@@ -246,8 +289,7 @@
                     <div id="operational"
                         class="hidden p-8 bg-white rounded-xl shadow-lg animate-fadeIn transition-all duration-500">
                         <h5 class="text-red-600 font-semibold uppercase tracking-widest mb-2">Why customers love us</h5>
-                        <h2
-                            class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 border-b-2 border-red-600 inline-block pb-2">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4 border-b-2 border-red-600 inline-block pb-2">
                             OPERATIONAL FOCUS
                         </h2>
                         <p class="text-gray-700 leading-relaxed text-lg">
@@ -704,50 +746,59 @@
     closeBtn.addEventListener('click', closeMenu);
     overlay.addEventListener('click', closeMenu);
 
-    const tabs = document.querySelectorAll(".tab-btn");
-    const contents = document.querySelectorAll(".tab-content > div");
+    // ===== SECTION ONE =====
+    const sectionOne = document.querySelector(".section-one");
+    const tabs = sectionOne.querySelectorAll(".tab-btn");
+    const contents = sectionOne.querySelectorAll(".tab-content > div");
 
     tabs.forEach(tab => {
         tab.addEventListener("click", () => {
-            // Reset all tabs
-            tabs.forEach(t => t.classList.remove("bg-black", "text-white"));
-            tabs.forEach(t => t.classList.add("bg-gray-200", "text-gray-900"));
+
+            // Reset all tabs to white background & black text
+            tabs.forEach(t => {
+                t.classList.remove("bg-black", "text-white");
+                t.classList.add("bg-white", "text-black");
+            });
 
             // Hide all contents
             contents.forEach(c => c.classList.add("hidden"));
 
             // Activate clicked tab
             tab.classList.add("bg-black", "text-white");
-            tab.classList.remove("bg-gray-200", "text-gray-900");
+            tab.classList.remove("bg-white", "text-black");
 
             const tabId = tab.dataset.tab;
-            document.getElementById(tabId).classList.remove("hidden");
+            sectionOne.querySelector("#" + tabId).classList.remove("hidden");
         });
     });
 
-    // Optional: Activate first tab by default
+    // Activate first tab
     tabs[0].click();
 
-    const tabItems = document.querySelectorAll(".tab-item");
-    const tabContents = document.querySelectorAll(".tab-content > div");
+    // ===== SECTION TWO =====
+    // ===== SECTION TWO =====
+    const sectionTwo = document.querySelector(".section-two");
+    const tabItems = sectionTwo.querySelectorAll(".tab-item");
+    const tabContents = sectionTwo.querySelectorAll(".tab-content > div");
 
     tabItems.forEach(item => {
         item.addEventListener("click", () => {
-            // Reset all tabs
-            tabItems.forEach(i => i.classList.remove("bg-black", "text-white"));
-            tabItems.forEach(i => i.classList.add("bg-gray-200", "text-gray-900"));
+
+            // Reset all tabs to gray background & white text
+            tabItems.forEach(i => {
+                i.classList.remove("bg-black");
+                i.classList.add("bg-gray-300", "text-white");
+            });
 
             // Hide all contents
             tabContents.forEach(c => c.classList.add("hidden"));
 
-            // Activate clicked tab
+            // Activate clicked tab → black background, white text
             item.classList.add("bg-black", "text-white");
-            item.classList.remove("bg-gray-200", "text-gray-900");
+            item.classList.remove("bg-gray-300");
 
             const tabId = item.dataset.tab;
-            const activeContent = document.getElementById(tabId);
-
-            activeContent.classList.remove("hidden");
+            sectionTwo.querySelector("#" + tabId).classList.remove("hidden");
         });
     });
 
@@ -773,6 +824,36 @@
     }, { threshold: 0.5 }); // Play when 50% visible
 
     observer.observe(video);
+
+    const imagesGrid = document.querySelector('.images');
+
+    const observerr = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                imagesGrid.classList.remove('opacity-0', 'translate-y-10');
+                imagesGrid.classList.add('opacity-100', 'translate-y-0');
+                observerr.unobserve(entry.target); // Trigger only once
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    // Observe when the section comes into view
+    observerr.observe(imagesGrid);
+
+    // Show the floating box after scrolling down 100px
+    const floatingBox = document.getElementById("floatingBox");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {  // scroll threshold
+            floatingBox.classList.remove("opacity-0");
+            floatingBox.classList.add("opacity-100");
+        } else {
+            floatingBox.classList.remove("opacity-100");
+            floatingBox.classList.add("opacity-0");
+        }
+    });
 
 </script>
 
