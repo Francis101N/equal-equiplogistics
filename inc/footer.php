@@ -74,10 +74,10 @@
         <div>
             <h4 class="text-xl font-semibold text-white mb-4">Useful Links</h4>
             <ul class="space-y-2">
-                <li><a href="#" class="hover:text-white transition">Home</a></li>
-                <li><a href="#" class="hover:text-white transition">About Us</a></li>
-                <li><a href="#" class="hover:text-white transition">Our Services</a></li>
-                <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                <li><a href="home" class="hover:text-white transition">Home</a></li>
+                <li><a href="about" class="hover:text-white transition">About Us</a></li>
+                <li><a href="services" class="hover:text-white transition">Our Services</a></li>
+                <li><a href="contact" class="hover:text-white transition">Contact</a></li>
             </ul>
         </div>
     </div>
