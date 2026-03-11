@@ -36,10 +36,10 @@
         <!-- Banner -->
         <div class="flex flex-col justify-center items-center text-center text-white h-[80vh] px-6">
             <h2 class="text-4xl md:text-6xl font-bold mb-6">
-                Fast & Reliable Logistics Solutions
+                Global Logistics Solution
             </h2>
             <p class="text-lg md:text-xl mb-8">
-                Delivering your packages safely across Nigeria and beyond.
+                Streamlining Logistics, Anywhere, Anytime
             </p>
             <a href="#" class="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-red-500 transition">
                 Discover

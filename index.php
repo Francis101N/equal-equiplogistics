@@ -17,8 +17,8 @@
         html,
         body {
             height: 100%;
-            overflow: hidden;
-            background: #000;
+            margin: 0;
+            background-color: #ffffff;
         }
 
         .video-container {
@@ -26,16 +26,25 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            width: 100vw;
+            width: 100%;
         }
 
-        video {
-            width: 60%;
+        /* Desktop */
+        .video-container video {
+            width: 45%;
+            max-width: 650px;
             height: auto;
-            max-height: 80%;
             object-fit: contain;
-            border-radius: 10px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .video-container video {
+                width: 80%;
+                /* bigger on small screens */
+                max-width: 350px;
+                /* keeps it clear */
+            }
         }
     </style>
 </head>
@@ -44,7 +53,7 @@
 
     <div class="video-container">
         <video autoplay muted playsinline>
-            <source src="IMAGES/Equal-intro.mp4" type="video/mp4">
+            <source src="IMAGES/Equal offshore limited. Logo alone.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>

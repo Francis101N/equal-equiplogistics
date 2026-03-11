@@ -62,7 +62,7 @@
     <section class="bg-black relative w-full h-[60vh] md:h-[70vh] overflow-hidden flex items-center justify-center">
 
         <!-- Background Image -->
-        <img src="IMAGES/logistics-banner.jpg" alt="Logistics Banner"
+        <img src="IMAGES/logistics1.jpg" alt="Logistics Banner"
             class="absolute w-full h-full object-cover opacity-40">
 
 
